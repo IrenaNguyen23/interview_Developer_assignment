@@ -48,7 +48,7 @@ public class PaymentService {
 
         if (!accountService.hasEnoughBalance(totalAmount)) {
             throw new IllegalStateException(
-                    "Not enough fund to proceed with payment");
+                    "Not enough fund to proceed with payment.");
         }
 
         // Only mutate state after every validation succeeds.
